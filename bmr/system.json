@@ -1,0 +1,17 @@
+{
+"id": "bmr",
+"title": "Bad Moon: Rising",
+"description": "Property of The Brotherhood Games",
+"version": "0.0.1",
+"author": "The Brotherhood Games",
+"esmodules": [
+    "bmr.js"
+],
+"styles":[
+"bmr.css"
+],
+"gridDistance": 1,
+"gridUnits":"m",
+"primaryTokenAttribute": "Vida",
+"initiative": "1d10 + dex"
+}
