@@ -1,0 +1,71 @@
+<form class="{{cssClass}}" autocomplete="off">
+	<header class="sheet-header">
+		<img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+		<h1><input name="name" type="text" value="{{item.name}}" placeholder="Nome"/></h1>
+	</header>
+	<div>
+		<table>
+			<tr>
+				<th>{{localize "bmr.arma.habilidade"}}</th>
+				<th>{{localize "bmr.arma.dano"}}</th>
+				<th>{{localize "bmr.arma.munição"}}</th>
+				<th>{{localize "bmr.arma.vida"}}</th>
+				<th>{{localize "bmr.arma.fanning"}}</th>
+				<th>{{localize "bmr.arma.levering"}}</th>
+				<th>{{localize "bmr.arma.suja"}}</th>
+				<th>{{localize "bmr.arma.tipo.dano"}}</th>
+				<th>{{localize "bmr.arma.manutenção"}}</th>
+				<th>{{localize "bmr.arma.tipo.munição"}}</th>
+				<th>{{localize "bmr.arma.qualidade"}}</th>
+			</tr>
+			<tr>
+				<td>
+					<select name="data.habilidade">
+						{{#select data.habilidade}}
+						{{each config.habilidade as |name type|}}
+						<option value="{{type}}"> {{name}}</option>
+						{{/each}}
+						{{/select}}
+
+					</select>
+				</td>
+				<td>
+					<select name="data.tipo.dano">
+						{{#select data.tipo.dano}}
+						{{each config.tipo.dano as |name type|}}
+						<option value="{{type}}"> {{name}}</option>
+						{{/each}}
+						{{/select}}
+
+					</select>
+				</td>
+				<td>
+					<select name="data.tipo.munição">
+						{{#select data.tipo.munição}}
+						{{each config.tipo.munição as |name type|}}
+						<option value="{{type}}"> {{name}}</option>
+						{{/each}}
+						{{/select}}
+
+					</select>
+				</td>
+				<td>
+					<input name="data.dano" type="text" value="{{data.dano}}" data-dtype="Number" />
+				</td>
+				<td>
+					<input name="data.munição" type="text" value="{{data.munição}}" data-dtype="Number" />
+				</td>
+				<td>
+					<input name="data.vida" type="text" value="{{data.vida}}" data-dtype="Number" />
+				</td>
+				<td>
+					<input name="data.manutenção" type="text" value="{{data.manutenção}}" data-dtype="Number" />
+				</td>
+				<td>
+					<input name="data.qualidade" type="text" value="{{data.qualidade}}" data-dtype="Number" />
+				</td>
+			</tr>
+		</table>
+		<textarea name="data.description">{{data.description}}</textarea>
+	</div>
+</form>

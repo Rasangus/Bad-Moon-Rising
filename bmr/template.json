@@ -1,0 +1,48 @@
+{
+    "Actor":{},
+    "Item":{
+        "types":[
+            "arma",
+            "roupa",
+            "consumível"
+        ],
+        "templates":{
+            "itemDescription":{
+                "description": ""
+            }
+        },
+        "arma":{
+            "templates":["itemDescription"],
+            "habilidade": "lutar",
+            "dano":0,
+            "munição":0,
+            "vida":0,
+            "fanning":false,
+            "levering":false,
+            "suja":false,
+            "tipo.dano": "tiro",
+            "manutenção":0,
+            "tipo.munição":"normal",
+            "qualidade":0
+
+        },
+        "roupa":{
+            "templates":["itemDescription"],
+            "perna.direita":0,
+            "perna.esquerda":0,
+            "barriga":0,
+            "peito":0,
+            "braço.direito":0,
+            "braço.esquerdo":0,
+            "cabeça":0,
+            "suja":false
+        },
+        "consumível":{
+            "templates":["itemDescription"],
+            "usos":0,
+            "tipo": "comida",
+            "dado": "d3",
+            "quantidade":0
+        }
+    }
+}
