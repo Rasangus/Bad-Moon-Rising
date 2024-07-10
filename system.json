@@ -2,7 +2,7 @@
         "id": "bmr",
         "title": "Bad Moon: Rising",
         "description": "Property of The Brotherhood Games",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "compatibility": {
           "minimum": 12,
           "verified": 12

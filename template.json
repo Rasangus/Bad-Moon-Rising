@@ -1,48 +1,54 @@
 {
-    "Actor":{},
-    "Item":{
-        "types":[
-            "arma",
-            "roupa",
-            "consumível"
-        ],
+    "Actor":{
+        "types":["character", "npc", "mount"],
         "templates":{
-            "itemDescription":{
-                "description": ""
+            "base":{
+                "stats":{
+                "str":{"base":0,"extra":0},
+                "con":{"base":0,"extra":0},
+                "int":{"base":0,"extra":0},
+                "siz":{"base":0,"extra":0},
+                "pow":{"base":0,"extra":0},
+                "dex":{"base":0,"extra":0},
+                "cha":{"base":0,"extra":0},
+                "edu":{"base":0,"extra":0}
+                },
+                "counter":{
+                    "hp":{"base":0, "extra":0},
+                    "luck":{"base":0, "extra":0},
+                    "humanity":{"base":0, "extra":0},
+                    "stamina":{"base":0, "extra":0},
+                    "sanity":{"base":0, "extra":0},
+                    "blood":{"base":0, "extra":0},
+                    "magic":{"base":0, "extra":0}
+                }
+            },
+            "character":{
+                "templates":["base"],
+                "name":"",
+                "player":"",
+                "culture":"",
+                "gender":"homem",
+                "hand":"destro",
+                "height":"",
+                "weight":"",
+                "profession":"",
+                "religion":"",
+                "trace":"",
+                "speed":0,
+                "description":0,
+                "age":0,
+                "wound":false,
+                "skillcategory":{
+                    "communication":{},
+                    "manipulation":{},
+                    "mental":{},
+                    "perception":{},
+                    "phisics":{}
+                }
             }
-        },
-        "arma":{
-            "templates":["itemDescription"],
-            "habilidade": "lutar",
-            "dano":0,
-            "munição":0,
-            "vida":0,
-            "fanning":false,
-            "levering":false,
-            "suja":false,
-            "tipo.dano": "tiro",
-            "manutenção":0,
-            "tipo.munição":"normal",
-            "qualidade":0
 
-        },
-        "roupa":{
-            "templates":["itemDescription"],
-            "perna.direita":0,
-            "perna.esquerda":0,
-            "barriga":0,
-            "peito":0,
-            "braço.direito":0,
-            "braço.esquerdo":0,
-            "cabeça":0,
-            "suja":false
-        },
-        "consumível":{
-            "templates":["itemDescription"],
-            "usos":0,
-            "tipo": "comida",
-            "dado": "d3",
-            "quantidade":0
         }
-    }
+    },
+    "Item":{}
 }

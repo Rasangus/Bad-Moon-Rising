@@ -6,7 +6,7 @@ export default class bmrItemSheet extends itemSheet {
     getData() {
         const data = super.getData();
 
-        data.config = CONFIG.fs2;
+        data.config = CONFIG.bmr;
 
         return data;
     }
