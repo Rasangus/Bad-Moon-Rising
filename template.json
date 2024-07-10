@@ -4,6 +4,8 @@
         "templates":{
             "base":{
                 "stats":{
+                "name":"",
+                "weight":"",
                 "str":{"base":0,"extra":0},
                 "con":{"base":0,"extra":0},
                 "int":{"base":0,"extra":0},
@@ -11,7 +13,11 @@
                 "pow":{"base":0,"extra":0},
                 "dex":{"base":0,"extra":0},
                 "cha":{"base":0,"extra":0},
-                "edu":{"base":0,"extra":0}
+                "edu":{"base":0,"extra":0},
+                "speed":0,
+                "age":0,
+                "description":""
+
                 },
                 "counter":{
                     "hp":{"base":0, "extra":0},
@@ -25,19 +31,14 @@
             },
             "character":{
                 "templates":["base"],
-                "name":"",
                 "player":"",
                 "culture":"",
                 "gender":"homem",
                 "hand":"destro",
                 "height":"",
-                "weight":"",
                 "profession":"",
                 "religion":"",
                 "trace":"",
-                "speed":0,
-                "description":0,
-                "age":0,
                 "wound":false,
                 "skillcategory":{
                     "communication":{},
@@ -46,7 +47,9 @@
                     "perception":{},
                     "phisics":{}
                 }
-            }
+            },
+            "npc":{},
+            "mount":{}
 
         }
     },
