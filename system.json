@@ -1,16 +1,26 @@
-{
-"id": "bmr",
-"title": "Bad Moon: Rising",
-"description": "Property of The Brotherhood Games",
-"version": "0.0.1",
-"esmodules": [
-    "bmr.js"
-],
-"gridDistance": 1,
-"gridUnits":"m",
-"primaryTokenAttribute": "Vida",
-"initiative": "1d10 + dex"
-}
-"url": "https://github.com/Rasangus/bmr",
-"manifest": "https://raw.githubusercontent.com/Rasangus/bmr/main/system.json"
-"download": "https://github.com/Rasangus/bmr/archive/main.zip"
+        {
+        "id": "bmr",
+        "title": "Bad Moon: Rising",
+        "description": "Property of The Brotherhood Games",
+        "version": "0.0.1",
+        "compatibility": {
+          "minimum": 12,
+          "verified": 12
+        },
+        "authors": [{
+          "name": "The Brotherhood Games.",
+          "url": "YOUR WEBSITE ADDRESS HERE",
+          "email": "YOUR EMAIL ADDRESS HERE",
+          "discord": "YOUR DISCORD USERNAME HERE"
+        }],
+        "esmodules": ["bmr.js"],
+        "initiative": "1d10 + dex",
+        "grid": {
+          "distance": 1,
+          "units": "m"
+        },
+        "primaryTokenAttribute": "Vida",
+        "url": "https://github.com/Rasangus/bmr",
+        "manifest": "https://raw.githubusercontent.com/Rasangus/bmr/main/system.json",
+        "download": "https://github.com/Rasangus/bmr/archive/main.zip"
+      }
