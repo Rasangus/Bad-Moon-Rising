@@ -12,3 +12,6 @@
 "primaryTokenAttribute": "Vida",
 "initiative": "1d10 + dex"
 }
+"url": "https://github.com/Rasangus/bmr",
+"manifest": "https://raw.githubusercontent.com/Rasangus/bmr/main/system.json"
+"download": "https://github.com/Rasangus/bmr/archive/refs/heads/main.zip"
